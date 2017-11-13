@@ -47,7 +47,8 @@ Any sort of malfunction
 - Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program.
 - The CryptoKitty website is not part of the bounty program.
 - The CryptoKitty bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of Crypto Kitty team. 
-- The value of rewards paid out will vary depending on Severity which is calculated based on Impact and Likelihood as followed by  OWASP:
+
+The value of rewards paid out will vary depending on Severity which is calculated based on Impact and Likelihood as followed by  [OWASP](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology):
                                
                          
 
