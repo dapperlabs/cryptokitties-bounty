@@ -49,9 +49,9 @@ Any sort of malfunction
 - The CryptoKitty bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of Crypto Kitty team. 
 
 The value of rewards paid out will vary depending on Severity which is calculated based on Impact and Likelihood as followed by  [OWASP](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology):
-                               
-                         
 
+![Alt text](https://github.com/axiomzen/cryptokitties-bounty/blob/master/owasp_w600.png)
+                         
 <b>Note: Rewards are at the sole discretion of the CK Team. 1 point currently corresponds to 1 USD (paid in ETH). The top 3 contributors who end up with the most points will also receive a Fancy CryptoKitty - co-designed with our designers. </b>
 - Critical: up to 1000 points
 - High: up to 500 points
