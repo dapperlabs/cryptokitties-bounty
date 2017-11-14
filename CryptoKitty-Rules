@@ -5,4 +5,35 @@ Rules of CK:
 - Then, the mother (dam) is gonna breedWith the sire.
 - Last step on this dance, the mom is going to giveBirth to new CryptoKitties!
 
+How to Breed:
+Metamask + MyEtherWallet > Rinkeby (infura.io)
+1. Go to MyEtherWallet
+2. Select Rinkeby (infura.io) from the top-right menu
+3. Copy and paste the contract address and the ABI from this GitHub Gist file
+
+Here is a list of the methods and what they do, in a order that would make sense to call them:
+function paused() constant
+
+Just mentioning it for peace of mind. The contract won’t be paused while the Alpha is running.
+function getKittiesOf(address addr) constant
+
+Pass in your address as a string to get the list of all kitty ids that you own. Pretty handy, eh? Every participant should start with 2.
+function getKitty(uint256 id) constant
+
+Pass in the Id of any kitten, it returns an array with all of its attributes.
+function kittyCount() constant
+
+Just a count of all kittens existing in the game
+function approveSiring(uint256 sireId, uint256 momId)
+
+The first param is a kitty you own. The second is the kittyId that you you are authorizing to be the mom.
+function breedWith(uint64 myKittyId, uint64 sireId)
+
+The first param is the kitty you own, and the second is either another kitty you own, or a kitty which the owner approved siring with your soon-to-be mom cat.
+function giveBirth(uint256 momId)
+
+Ahhh the joy of birth! Call this function with a pregnant kitty you own. After calling this function, if it all goes well, then your kitty will be born and will belong to you. To figure out which is your new kitty ID, call the constant function `getKittiesOf`; the newborn will be the last one in that list.
+function transfer(address _to, uint _kittyId) public
+
+If you want to transfer a kitty to someone else. Transfer a kitty you own, to any address. Requires you to own the kitty, and the contract must not be in paused state
 
