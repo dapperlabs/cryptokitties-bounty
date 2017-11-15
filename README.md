@@ -84,3 +84,7 @@ The value of rewards paid out will vary depending on Severity which is calculate
 <b>Important Legal Information:</b>
 
 The bug bounty program is an experimental and discretionary rewards program for our community to encourage and reward those who are helping to improve CryptoKitties. You should know that we can cancel the program at any time, and awards are at the sole discretion of CryptoKitties bug bounty panel. In addition, we are not able to issue awards to individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc). All rewards are subject to applicable law and thus applicable taxes. Don't target our physical security measures, or attempt to use social engineering, spam, distributed denial of service (DDOS) attacks, etc. Lastly, your testing must not violate any law or compromise any data that is not yours.
+
+Copyright (c) 2017 Launch Labs Inc. (dba Axiom Zen)
+
+All rights reserved. The contents of this repository is provided for review and educational purposes ONLY. You MAY NOT use, copy, distribute, or modify this software without express written permission from Axiom Zen or Launch Labs Inc.
