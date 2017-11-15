@@ -37,7 +37,7 @@ The value of rewards paid out will vary depending on Severity which is calculate
 
 ![Alt text](https://github.com/axiomzen/cryptokitties-bounty/blob/master/owasp_w600.png)
                          
-<b>Note: Rewards are at the sole discretion of the CryptoKitty Team. The top 3 contributors who end up with the most points will receive 5 ETH, 3 ETH, 2 ETH. The top 10 people on our leaderboard of accepted bugs will receive a limited edition BugCat available only to successful participants in this bounty program.
+<b>Note: Rewards are at the sole discretion of the CK Team. 1 point currently corresponds to 1 USD (paid in ETH) The top 10 people on our leaderboard of accepted bugs with over 250 points will receive a limited edition BugCat available only to successful participants in this bounty program.
 </b>
 - Critical: up to 1000 points
 - High: up to 500 points
