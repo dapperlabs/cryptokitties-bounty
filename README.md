@@ -1,7 +1,7 @@
 # The CryptoKitty Bounty Program
 CryptoKitties recognizes the importance of security researchers in keeping our community safe and fun. With the launch of CryptoKitties around the corner, we would love the community to help provide disclosure of security vulnerabilities via our bounty program described below.
 
-### What you should know about CryptoKitties:
+### What you Should Know About CryptoKitties:
 
 - CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.
 - CryptoKitties is a non-fungible token (ERC #721) that is indivisible and unique.
@@ -19,7 +19,7 @@ Note: CryptoKitties do not have a permanently assigned gender. While they can on
 
 **See full basic operations [here](https://github.com/axiomzen/cryptokitties-bounty/blob/master/CryptoKitty-Basic-Operations)**  
 
-### The Scope for this bounty program:
+### The Scope for this Bounty Program:
 
 This bounty program will run within the Rinkeby network from <b>12:01am GMT November 16th - 11:59pm GMT November 20th, 2017</b>. All code important to this bounty program is publicly available within this repo
 Help us identify bugs, vulnerabilities, and exploits in the smart contract such as:
