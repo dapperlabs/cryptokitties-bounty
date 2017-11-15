@@ -34,8 +34,7 @@ This newborn will be assigned to the owner of the dame cat at the time of birth.
  
  
 <b>The Scope for this bounty program:</b>
-This bounty program will run within the Rinkeby network from November 11th 5pm - November 15th 5pm.
-All code important to this bounty program is publicly available within this repo
+This bounty program will run within the Rinkeby network from <b>12:01am GMT November 16th - 11:59pm GMT November 20th, 2017</b>. All code important to this bounty program is publicly available within this repo
 Help us identify bugs, vulnerabilities, and exploits in the smart contract such as:
 Breaking the game (ex. auctioning doesn’t work, breeding doesn’t work,) 
 Incorrect usage of the game 
@@ -46,7 +45,7 @@ Any sort of malfunction
  
 <b>Rules & Rewards:</b>
 - Issues that have already been submitted by another user or are already known to the CK team are not eligible for bounty rewards.
-- Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program.
+- Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program. Attacks on the network that result in bad behaviour are not allowed. 
 - The CryptoKitty website is not part of the bounty program.
 - The CryptoKitty bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of Crypto Kitty team. 
 
@@ -54,12 +53,18 @@ The value of rewards paid out will vary depending on Severity which is calculate
 
 ![Alt text](https://github.com/axiomzen/cryptokitties-bounty/blob/master/owasp_w600.png)
                          
-<b>Note: Rewards are at the sole discretion of the CK Team. 1 point currently corresponds to 1 USD (paid in ETH). The top 3 contributors who end up with the most points will also receive a Fancy CryptoKitty - co-designed with our designers. </b>
+<b>Note: Rewards are at the sole discretion of the CK Team. The top 3 contributors who end up with the most points will receive 5 ETH, 3 ETH, 2 ETH and all contributors of accepted bugs will receive a limited edition bug cat available only to successful participants in this bounty program.
+</b>
 - Critical: up to 1000 points
 - High: up to 500 points
 - Medium: up to 250 points
 - Low: up to 125 points 
 - Note: up to 50 points
+
+<b> Examples of Impact: </b>
+- High: Steal a kitty from someone, steal/redirect ETH or kitties to another address, set kitty genes to arbitraty value, block actions for all users or some non-trivial fraction of users.  
+- Medium: Break breeding rules (self-breeding, sibling breeding, by-pass cool-downs), lock a single kitty owned by an address you don't control. 
+- Low: Block a user from bidding during an auction, create price or comission errors in auction.  
 
 <b>Suggestions for Getting the Highest Score:</b>
 - Description: Be clear in describing the vulnerability or bug. Ex. share code scripts, screenshots or detailed descriptions.
@@ -90,5 +95,10 @@ The value of rewards paid out will vary depending on Severity which is calculate
   - No. Please do not copy this code for other purposes than reviewing it.  
 - I have more questions!
   - Create a new issue with the title starting as “QUESTION” 
+- Will the code change during the bounty?
+ - Yes, as issues are reported we will update the code as soon as possible. Please make sure your bugs are reported against the latest versions of the published code.
+  
 
+<b>Important Legal Information:</b>
 
+The bug bounty program is an experimental and discretionary rewards program for our community to encourage and reward those who are helping to improve CryptoKitties. You should know that we can cancel the program at any time, and awards are at the sole discretion of CryptoKitties bug bounty panel. In addition, we are not able to issue awards to individuals who are on sanctions lists or who are in countries on sanctions lists (e.g. North Korea, Iran, etc). All rewards are subject to applicable law and thus applicable taxes. Lastly, your testing must not violate any law or compromise any data that is not yours.
