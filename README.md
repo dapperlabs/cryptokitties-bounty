@@ -36,6 +36,7 @@ Any sort of malfunction
 - Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program. Attacks on the network that result in bad behaviour are not allowed.
 - The CryptoKitty website is not part of the bounty program.
 - The CryptoKitty bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of CryptoKitty team.
+- Bugs and vulnerabilities must be reported within this GitHub repo in order to receive a reward. 
 - In general, please investigate and report bugs in a way that makes a reasonable, good faith effort not to be disruptive or harmful to us or others.
 
 The value of rewards paid out will vary depending on Severity which is calculated based on Impact and Likelihood as followed by  [OWASP](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology):
