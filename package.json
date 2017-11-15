@@ -1,0 +1,41 @@
+{
+  "name": "cryptokitty",
+  "version": "1.0.0",
+  "description": "CK",
+  "main": "index.js",
+  "scripts": {
+    "truffle": "truffle",
+    "testrpc":
+      "testrpc --gasLimit 5000000 --account=\"0xe6986038796c774d5046fe7033b4af8c070c474bf963fc6129156796f1903bc2,10000000000000000000000\"  --account=\"0xff644902a9efe16bd30e27487eab5c1b37d90be4f9c7e34734f980c4fc76629e,10000000000000000000000\" --account=\"0xa15f7ecf49e82f2749efe07bd113f24fb28fa2f6bfb6506b9a9ab291bd7bbf67,10000000000000000000000\" --account=\"0xd7b0d0c6e3b2755792126f44093ea4ac86910c6cb5d59939f572a5ca46bef0ce,10000000000000000000000\" --account=\"0xa8e7edd6bc80ed62664360150345031bd3ad93dffa1390d5f848fa1d31b74070,10000000000000000000000\" --account=\"0x0f3c1d6780a130a6da4941f59594ca0c73b78d01494e29f49bb506ed5f6aad2f,10000000000000000000000\" --account=\"0x7fce411152e37119bf0110396a80633d1a742cad4a8486e9004fa8f070442a2e,10000000000000000000000\" --account=\"0xe6905decd0fdf5ef45a1667664e5f92804fdc1522040a3a3b2b4e77bc0dd3181,10000000000000000000000\" --account=\"0xd1d7cce87b574554d81e992805391c123ca42e16b360897a3a254cd8ca5aab45,10000000000000000000000\"",
+    "test": "truffle test",
+    "deploy:rinkeby": "rm -rf build/ && truffle migrate --network rinkeby",
+    "build": "truffle compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axiomzen/cryptokitty.git"
+  },
+  "author": "Axiom Zen",
+  "contributors": [
+    "Dieter Shirley <dete@axiomzen.co> (https://github.com/dete)",
+    "Fabiano P. Soriani <fabianosoriani@gmail.com> (https://github.com/flockonus)",
+    "Jordan Schalm <jordan.schalm@gmail.com> (https://github.com/jordanschalm)"
+  ],
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/axiomzen/cryptokitty/issues"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "babel-preset-stage-3": "^6.3.13",
+    "debug": "3.0.1",
+    "ethereumjs-testrpc": "6.0.1",
+    "eth-random": "0.0.4-alpha.1",
+    "truffle": "4.0.1",
+    "web3": "0.20.1",
+    "zeppelin-solidity": "1.2.0"
+  },
+  "homepage": "https://github.com/axiomzen/cryptokitty#readme"
+}

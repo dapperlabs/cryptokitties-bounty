@@ -76,3 +76,18 @@ Here's what we expect to be the most usual flow, and what function are to be cal
 
 Please see complete the explanation of roles in `KittyAccessControl.sol`
 There are more rules and comments on the source code, please refer to the code and tests in case things don't work as first expected.
+
+## Running Tests
+
+The only pre-dependency is **Node 8.9.0** - the best way to install node is via [nvm](https://github.com/creationix/nvm)
+
+We are using [Truffle 4 framework to develop](http://truffleframework.com/docs/), all dependencies are installed via `npm install`
+
+Run the the test suite: `npm test`
+
+You can make tests more verbose by setting `export DEBUG=ck`
+
+## Listing all kittens and auctions in Rinkeby
+
+(just once) `npm run build`
+`node `
