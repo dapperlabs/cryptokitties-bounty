@@ -4,16 +4,15 @@ CryptoKitties recognizes the importance of security researchers in keeping our c
 ### What you should know about CryptoKitties:
 
 - CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.
-- CryptoKitties is a non-fungible token (ERC #721) that is indivisible and unique.
+- CryptoKitties are a non-fungible tokens (see [ERC #721](https://github.com/ethereum/EIPs/issues/721)) that are indivisible and unique.
 - The smart contracts have over 4-billion variations of phenotypes (what you see) and genotypes (what you don’t see). Because cats are tokens on a blockchain, they can be bought, sold, or transferred digitally, with strong guarantees of ownership.
-- CryptoKitties is built on the ethereum network; ether will be necessary to fuel transactions, which include purchasing, trading, and breeding CryptoKitties. For the purpose of this bounty program in our alpha-test, the program will run within the Rinkeby network. Also the source code will be available for review.
-- Two CryptoKitties can breed a new CryptoKitty offspring
+- CryptoKitties is built on the Ethereum network; ether will be necessary to fuel transactions, which include purchasing, trading, and breeding CryptoKitties. For the purpose of this bounty program in our alpha-test, the program will run within the Rinkeby network. Also the source code will be available for review.
 
 Additionally, any two CryptoKitties can breed together to produce an offspring, which is a genetic combination of the two parents. In each pairing, one CryptoKitty will act as the sire and will have a recovery period (which increases each time they sire / get pregnant) before being able to engage in another pairing.
 
-The other CryptoKitty will incubate the new kitten, during which it can’t engage in other breeding. After this gestation period, the CryptoKitten can be born and its genotype and phenotype revealed.
+The other CryptoKitty will incubate the new kitten, during which it can’t engage in other breeding. After this gestation period, the kitten can be born and its genotype and phenotype revealed.
 
-This newborn will be assigned to the owner of the matron cat at the time of birth. Both the matron and the new CryptoKitten will being available for further breeding immediately after birth.
+This newborn will be assigned to the owner of the matron cat at the time of birth. Both the matron and the new CryptoKitty will being available for further breeding immediately after birth.
 
 Note: CryptoKitties do not have a permanently assigned gender. While they can only engage in one breeding one session at one time, each cat is able to act as either matron or sire. The owner chooses per breeding interaction!
 
@@ -23,18 +22,18 @@ Note: CryptoKitties do not have a permanently assigned gender. While they can on
 
 This bounty program will run within the Rinkeby network from <b>12:01am GMT November 16th - 11:59pm GMT November 20th, 2017</b>. All code important to this bounty program is publicly available within this repo
 Help us identify bugs, vulnerabilities, and exploits in the smart contract such as:
-Breaking the game (ex. auctioning doesn’t work, breeding doesn’t work,)
-Incorrect usage of the game
-Steal a cat from someone else
-Act as one of the admin accounts
-Complete something without respecting the cool-down period
-Any sort of malfunction
+- Breaking the game (ex. auctioning doesn’t work, breeding doesn’t work,)
+- Incorrect usage of the game
+- Steal a cat from someone else
+- Act as one of the admin accounts
+- Complete something without respecting the cool-down period
+-Any sort of malfunction
 
 ### Rules & Rewards:
 
 - Issues that have already been submitted by another user or are already known to the CryptoKitty team are not eligible for bounty rewards.
-- Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program. Attacks on the network that result in bad behaviour are not allowed.
-- The CryptoKitty website is not part of the bounty program.
+- Bugs and vulnerabilities should only be found using accounts you own and create. Please respect third party applications and understand that an exploit that is not specific to the CryptoKitty smart contract is not part of the bounty program. Attacks on the network that result in bad behaviour for any contract are not allowed.
+- The CryptoKitty website is not part of the bounty program, just the smart contract code included in this repo.
 - The CryptoKitty bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to a reward are at the sole and final discretion of CryptoKitty team.
 - Reports will only be accepted via GitHub issues submitted to this repo.
 - In general, please investigate and report bugs in a way that makes a reasonable, good faith effort not to be disruptive or harmful to us or others.
@@ -43,7 +42,7 @@ The value of rewards paid out will vary depending on Severity which is calculate
 
 ![Alt text](https://github.com/axiomzen/cryptokitties-bounty/blob/master/owasp_w600.png)
 
-<b>Note: Rewards are at the sole discretion of the CK Team. 1 point currently corresponds to 1 USD (paid in ETH) The top 10 people on our leaderboard of accepted bugs with over 250 points will receive a limited edition BugCat available only to successful participants in this bounty program.</b>
+<b>Note: Rewards are at the sole discretion of the CK Team. 1 point currently corresponds to 1 USD (paid in ETH) The top 10 people on our leaderboard of accepted bugs with at least 250 points will receive a limited edition BugCat available only to successful participants in this bounty program.</b>
 
 - Critical: up to 1000 points
 - High: up to 500 points
@@ -70,7 +69,7 @@ The value of rewards paid out will vary depending on Severity which is calculate
 - <b>Description:</b> A brief description of the vulnerability
 - <b>Scenario:</b> A description of the requirements for the vulnerability to happen
 - <b>Impact:</b> The result of the vulnerability and what or who can be affected
-- <b>Reproduction:</b> Provide the exact steps on how to reproduce this vulnerability on a new contract, and if applies, point to specific tx hashes or accounts used.
+- <b>Reproduction:</b> Provide the exact steps on how to reproduce this vulnerability on a new contract, and if possible, point to specific tx hashes or accounts used.
 - <b>Note:</b> If we can't reproduce with given instructions then a (Truffle) test case will be required.
 - <b>Fix:</b> If applies, what would would you do to fix this
 
