@@ -5,6 +5,22 @@ Rules of CK:
 - Then, the mother (dam) is gonna breedWith the sire.
 - Last step on this dance, the mom is going to giveBirth to new CryptoKitties!
 
+<b> Kitten Cooldowns: The cooldown for siring a new CryptoKitty increases with each attempt.</b> 
+1. 1 min
+2. 2 min
+3. 5 min
+4. 10 min
+5. 30 min
+6. 1 hour
+7. 2 hours
+8. 4 hours
+9. 8 hours
+10. 16 hours
+11. 1 day
+12. 2 days
+13. 4 days
+14. 7 day
+
 How to Breed:
 Metamask + MyEtherWallet > Rinkeby (infura.io)
 1. Go to MyEtherWallet
