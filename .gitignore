@@ -1,0 +1,8 @@
+.vscode
+node_modules
+build
+.DS_Store
+genes-matrix
+simulations-results
+.node-xml*
+fancy-cats
