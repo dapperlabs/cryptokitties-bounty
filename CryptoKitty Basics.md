@@ -34,6 +34,7 @@ It's a mystery! Not public for this release.
 
 
 The cooldown time table base that will be used for base CryptoKitties in production can be found under `KittyBase.sol`.
+
 **For the Rinkeby release we made cooldowns much shorter**, consult current values in `KittyCoreRinkeby.sol`.
 
 ## Breeding with Kittens you don't own
@@ -42,9 +43,37 @@ The cooldown time table base that will be used for base CryptoKitties in product
 - The owner of a Kitten can allow siring to another ethereum address, that's using the main contract.
 - The owner of another Kitten can submit their kitten into a clock siring auction, and the bidder must supply their matron.
 
-
 ## Trading
 
 - There are 2 main ways to trade: direct transfer, or auctions.
 - A owner of a kitten can put their kitty to a clock sales auction.
 - Or, either transfer to another Ethereum address, or approve to another address.
+
+There are more rules and comments on the source code, please refer to the code and tests in case things don't work as first expected.
+
+
+# Usual flow:
+
+Here's what we expect to be the common way things go in crypto kitties usage.
+
+Please see a complete explanation of roles in `KittyAccessControl.sol`
+
+1. COO can will periodically, put a kitten to gen0 auction (Main `createGen0Auction()`)
+1. user go an buy gen0 kittens (Sale Auction `bid()`)
+1. user can get kitty data (Main `getKitty()`)
+1. user can breed their own kittens (Main `breedWith()` or `breedWithAuto()`)
+1. after cooldown is passed, any user can have a pregnant kitty giving birth (Main `giveBirth()`)
+1. user can offer one of their kitties as sire via auction (Main `createSiringAuction()`)
+1. user can offer their kitty as sire to another user (Main `approveSiring()`)
+1. user can bid on an active siring auction (Main `createSiringAuction()`)
+1. user can put their kitty for sale on auction (Main `createSaleAuction()`)
+1. user can buy a kitty that is on auction from another user (Sale Auction `bid()`)
+1. user can check info of a kitty that is to auction (Sale/Siring Auction `getAuction()`)
+1. user can cancel an auction they started (Sale/Siring Auction `cancelAuction()`)
+1. user can transfer a kitty they own to another user (Main `transfer()`)
+1. user can allow another user to take ownership of a kitty they own (Main `approve()`)
+1. once an user has a kitty ownership approved, they can claim a kitty (Main `transferFrom()`)
+1. CEO is the only one that may replace COO or CTO
+1. COO eventually mint and distribute promotional kittens (Main `createPromoKitty()`)
+1. CTO eventually transfers the balance from auctions (Main `withdrawAuctionBalances()`)
+1. CTO eventually drain funds from (Main `withdrawBalance()`)
