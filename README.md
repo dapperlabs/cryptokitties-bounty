@@ -69,8 +69,8 @@ The value of rewards paid out will vary depending on Severity which is calculate
 - <b>Fix:</b> If applies, what would would you do to fix this
 
 <b>FAQ:</b>
-- What is the time limit to this?
-  - From Nov 10 - released page to Nov 15 end of day.
+- Is there a time limit?
+  - We are accepting bugs from 12:01 GMT Nov 16th - 11:59 GMT Nov 20th, 2017. 
 - How are the bounties paid out?
   - Rewards are paid out in ETH after the submission has been validated, usually a few days later. Please provide your ETH address.
 - I reported an issue but have not received a response!
