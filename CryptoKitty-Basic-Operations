@@ -1,55 +1,50 @@
-Operations of CryptoKitties:
-- If you own 2 Kitties, you can use either of them as the sire (father) and the dam (mother).
-- To breed with other kittens you don’t own, then first the owner of the kitty who will be the sire must authorize their kitten (which is not gestating) to be a sire approveSiring.
-- Use this website (Browse) to find other kitties.
-- Then, the mother (dam) is gonna breedWith the sire.
-- Last step on this dance, the mom is going to giveBirth to new CryptoKitties!
+# Basics of CryptoKitties:
 
-<b> Kitten Cooldowns: The cooldown for siring a new CryptoKitty increases with each attempt.</b> 
-1. 1 min
-2. 2 min
-3. 5 min
-4. 10 min
-5. 30 min
-6. 1 hour
-7. 2 hours
-8. 4 hours
-9. 8 hours
-10. 16 hours
-11. 1 day
-12. 2 days
-13. 4 days
-14. 7 day
+CK is composed of 4 public facing contracts, we'll provide an overview on those:
 
-How to Breed:
-Metamask + MyEtherWallet > Rinkeby (infura.io)
-1. Go to MyEtherWallet
-2. Select Rinkeby (infura.io) from the top-right menu
-3. Copy and paste the contract address and the ABI from this GitHub Gist file
+##### KittyCore.sol - `0x16baf0de678e52367adc69fd067e5edd1d33e3bf`
 
-Here is a list of the methods and what they do, in a order that would make sense to call them:
-function paused() constant
+Also referred as the main contract. It's where kitties and ownership are stored.
+It also mediates all the main operations, such as breeding, exchange, and part of auctions.
+For this release the actual bytecode released for the contract is `KittyCoreRinkeby.sol`, explained below.
 
-Just mentioning it for peace of mind. The contract won’t be paused while the Alpha is running.
-function getKittiesOf(address addr) constant
+##### SaleClockAuction.sol - `0x8a316edee51b65e1627c801dbc09aa413c8f97c2`
 
-Pass in your address as a string to get the list of all kitty ids that you own. Pretty handy, eh? Every participant should start with 2.
-function getKitty(uint256 id) constant
+Where users are expected to acquire their gen0 kitten.
+Also a market place that anyone can post their kitten for auction.
+[See Dutch/Clock auction](https://en.wikipedia.org/wiki/Dutch_auction) - note we also accept an increasing price.
 
-Pass in the Id of any kitten, it returns an array with all of its attributes.
-function kittyCount() constant
+##### SiringClockAuction.sol - `0x07ca8a3a1446109468c3cf249abb53578a2bbe40`
 
-Just a count of all kittens existing in the game
-function approveSiring(uint256 sireId, uint256 momId)
+A market place where any user can set their kitty as a potential sire for any takers.
 
-The first param is a kitty you own. The second is the kittyId that you you are authorizing to be the mom.
-function breedWith(uint64 myKittyId, uint64 sireId)
+##### GeneScience.sol
 
-The first param is the kitty you own, and the second is either another kitty you own, or a kitty which the owner approved siring with your soon-to-be mom cat.
-function giveBirth(uint256 momId)
+It's a mystery! Not public for this release.
 
-Ahhh the joy of birth! Call this function with a pregnant kitty you own. After calling this function, if it all goes well, then your kitty will be born and will belong to you. To figure out which is your new kitty ID, call the constant function `getKittiesOf`; the newborn will be the last one in that list.
-function transfer(address _to, uint _kittyId) public
+## Basic breeding rules
 
-If you want to transfer a kitty to someone else. Transfer a kitty you own, to any address. Requires you to own the kitty, and the contract must not be in paused state
+- 2 Kitties can breed, except when: they are siblings (share one of the parents), or with their parents.
+- Also they must be either owned by the same user, or one user offers a Kitty siring to another user.
+- If you have 2 Kitties that fits this condition, you can use one as sire (father) and the other as matron (mother) - Kitties don't have gender.
+- After breeding, the assigned matron will be pregnant and under cooldown, father will also be under cooldown.
+- Cooldown stands for the period of time the kitty cannot perform any breeding actions, it increases per Kitten.
+- After the matron cooldown is complete, it can give birth, and engage in breeding again right away.
+- As kitties breed their cooldowns increase. For the bounty program, the table can be found in `KittyCoreRinkeby.sol`. Production values will be in `KittyBase.sol`.
 
+
+The cooldown time table base that will be used for base CryptoKitties in production can be found under `KittyBase.sol`.
+**For the Rinkeby release we made cooldowns much shorter**, consult current values in `KittyCoreRinkeby.sol`.
+
+## Breeding with Kittens you don't own
+
+- In that case you provide the matron, and have the sire allowed to you. And there are 2 practical cases this can happen:
+- The owner of a Kitten can allow siring to another ethereum address, that's using the main contract.
+- The owner of another Kitten can submit their kitten into a clock siring auction, and the bidder must supply their matron.
+
+
+## Trading
+
+- There are 2 main ways to trade: direct transfer, or auctions.
+- A owner of a kitten can put their kitty to a clock sales auction.
+- Or, either transfer to another Ethereum address, or approve to another address.
