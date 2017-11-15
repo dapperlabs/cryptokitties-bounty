@@ -14,24 +14,7 @@ The other CryptoKitty will incubate the new kitten, during which it can’t enga
 This newborn will be assigned to the owner of the dame cat at the time of birth. Both the dame and the new CryptoKitten will being available for further breeding immediately after birth.
   Note: CryptoKitties do not have a permanently assigned gender. While they can only engage in one breeding one session at one time, each cat is able to act as either matron or sire. The owner chooses per breeding interaction!
   
-<b> See full gaming rules [here](https://github.com/axiomzen/cryptokitties-bounty/blob/master/CryptoKitty-Rules) </b> 
-
-<b> Kitten Cooldowns: The cooldown for siring a new CryptoKitty increases with each attempt.</b> 
-1. 1 min
-2. 2 min
-3. 5 min
-4. 10 min
-5. 30 min
-6. 1 hour
-7. 2 hours
-8. 4 hours
-9. 8 hours
-10. 16 hours
-11. 1 day
-12. 2 days
-13. 4 days
-14. 7 day
- 
+<b> See full gaming rules [here](https://github.com/axiomzen/cryptokitties-bounty/blob/master/CryptoKitty-Rules) </b>  
  
 <b>The Scope for this bounty program:</b>
 This bounty program will run within the Rinkeby network from <b>12:01am GMT November 16th - 11:59pm GMT November 20th, 2017</b>. All code important to this bounty program is publicly available within this repo
