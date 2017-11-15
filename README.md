@@ -6,14 +6,14 @@ CryptoKitties recognizes the importance of security researchers in keeping our c
 - CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.
 - CryptoKitties is a non-fungible token (ERC #721) that is indivisible and unique.
 - The smart contracts have over 4-billion variations of phenotypes (what you see) and genotypes (what you don’t see). Because cats are tokens on a blockchain, they can be bought, sold, or transferred digitally, with strong guarantees of ownership.
-- CryptoKitties is built on the ethereum network; ether will be necessary to fuel transactions, which include purchasing, trading, and breeding CryptoKitties. For the purpose of this bounty program in our alpha-test, the program will run within the Rinkeby network. Also the source code will be available for review.
-- Two CryptoKitties can breed a new CryptoKitty offspring
+- CryptoKitties is built on the ethereum network; ether will be necessary to fuel transactions, which include purchasing, trading, and breeding CryptoKitties. For the purpose of this bounty program, the program will run within the Rinkeby test network. Also the source code will be available for review.
+- Two CryptoKitties can breed a new CryptoKitty
 
-Additionally, any two CryptoKitties can breed together to produce an offspring, which is a genetic combination of the two parents. In each pairing, one CryptoKitty will act as the sire and will have a recovery period (which increases each time they sire / get pregnant) before being able to engage in another pairing.
+Additionally, any two CryptoKitties can breed together to produce a new CryptoKitty, which is a genetic combination of the two parents (and some randomness). In each pairing, one CryptoKitty will act as the sire (the father) and will have a recovery period (which increases each time they sire / get pregnant) before being able to engage in another pairing.
 
-The other CryptoKitty will incubate the new kitten, during which it can’t engage in other breeding. After this gestation period, the CryptoKitten can be born and its genotype and phenotype revealed.
+The other CryptoKitty will incubate the new Kitty, during which it can’t engage in other breeding. After this gestation period, the CryptoKitty can be born and its genotype and phenotype revealed.
 
-This newborn will be assigned to the owner of the matron cat at the time of birth. Both the matron and the new CryptoKitten will being available for further breeding immediately after birth.
+This newborn will be assigned to the owner of the matron cat at the time of birth. Both the matron and the new CryptoKitty will being available for further breeding immediately after birth.
 
 Note: CryptoKitties do not have a permanently assigned gender. While they can only engage in one breeding one session at one time, each cat is able to act as either matron or sire. The owner chooses per breeding interaction!
 
