@@ -84,7 +84,7 @@ The value of rewards paid out will vary depending on Severity which is calculate
 - I have more questions!
   - Create a new issue with the title starting as “QUESTION”
 - Will the code change during the bounty?
- - Yes, as issues are reported we will update the code as soon as possible. Please make sure your bugs are reported against the latest versions of the published code.
+  - Yes, as issues are reported we will update the code as soon as possible. Please make sure your bugs are reported against the latest versions of the published code.
 
 
 <b>Important Legal Information:</b>
