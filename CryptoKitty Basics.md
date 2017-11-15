@@ -90,7 +90,8 @@ You can make tests more verbose by setting `export DEBUG=ck`
 
 ## Listing all kittens and auctions in Rinkeby
 
-We added a convenience script to make it easier to see the state of some of the stats.
+We added a convenience script to make it easier to see the state of some of the most important stats
 
-(build once the ABIs) `npm run build`
-`node scripts/list-kitties-auctions.js`
+- (build once the ABIs) `npm run build`
+- Make sure your geth is running [in sync with rinkeby](https://gist.github.com/cryptogoth/10a98e8078cfd69f7ca892ddbdcf26bc). (alternatively you may wanna try a public web3 compatible API, like Infura).
+- `node scripts/list-kitties-auctions.js` - configure geth rpc port here.

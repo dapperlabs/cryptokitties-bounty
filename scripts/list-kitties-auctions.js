@@ -12,7 +12,6 @@ const salesAbi = require("../build/contracts/SaleClockAuction.json").abi;
 const coreBountyAddress = "0x16baf0de678e52367adc69fd067e5edd1d33e3bf";
 const salesBountyAddress = "0x8a316edee51b65e1627c801dbc09aa413c8f97c2";
 
-console.log("-- creating new instance");
 const web3 = new Web3();
 
 // require a local full node to be running
@@ -77,7 +76,18 @@ async function getAuction(id) {
 }
 
 async function run() {
-  const n = await callAsync("totalSupply");
+  let n;
+  try {
+    n = await callAsync("totalSupply");
+  } catch (err) {
+    console.log(
+      "\nMake sure your testrpc is running --rinkeby at",
+      nodeAddress,
+      "\n"
+    );
+    console.log(err);
+    process.exit(1);
+  }
   console.log("kittens:", n.toNumber());
 
   for (let i = 1; i <= n; i++) {
