@@ -90,5 +90,7 @@ You can make tests more verbose by setting `export DEBUG=ck`
 
 ## Listing all kittens and auctions in Rinkeby
 
-(just once) `npm run build`
-`node `
+We added a convenience script to make it easier to see the state of some of the stats.
+
+(build once the ABIs) `npm run build`
+`node scripts/list-kitties-auctions.js`
