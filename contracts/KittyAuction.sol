@@ -1,9 +1,9 @@
 pragma solidity ^0.4.18;
 
 import "./KittyBreeding.sol";
-import "./auction/ClockAuction.sol";
-import "./auction/SiringClockAuction.sol";
-import "./auction/SaleClockAuction.sol";
+import "./Auction/ClockAuction.sol";
+import "./Auction/SiringClockAuction.sol";
+import "./Auction/SaleClockAuction.sol";
 
 /// @title Handles creating auctions for sale and siring of kitties.
 ///  This wrapper of ReverseAuction exists only so that users can create
