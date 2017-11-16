@@ -6,8 +6,8 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 // Set with the address youhave your Rinkeby node running:
 const nodeAddress = process.env.FULL_NODE_URL || "http://localhost:8945";
 
-const coreAbi = require("../build/contracts/KittyCore.json").abi;
-const salesAbi = require("../build/contracts/SaleClockAuction.json").abi;
+const coreAbi = require("../ABI/KittyCore.json");
+const salesAbi = require("../ABI/SaleClockAuction.json");
 
 const coreBountyAddress = "0x16baf0de678e52367adc69fd067e5edd1d33e3bf";
 const salesBountyAddress = "0x8a316edee51b65e1627c801dbc09aa413c8f97c2";

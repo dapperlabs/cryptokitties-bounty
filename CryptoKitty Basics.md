@@ -13,6 +13,8 @@ For this release, the actual bytecode released for the contract is `KittyCoreRin
 
 Where users are expected to acquire their gen0 kitten. It is also a marketplace where anyone can post their kitten for auction.
 [See Dutch/Clock auction](https://en.wikipedia.org/wiki/Dutch_auction) - note we also accept an increasing price.
+ps: CK auctions take an initial time and duration, and after duration is over they are not closed. Instead they hold the final price indefinitely
+
 
 ##### SiringClockAuction.sol - `0x07ca8a3a1446109468c3cf249abb53578a2bbe40`
 
@@ -92,6 +94,5 @@ You can make tests more verbose by setting `export DEBUG=ck`
 
 We added a convenience script to make it easier to see the state of some of the most important stats
 
-- (build once the ABIs) `npm run build`
 - Make sure your geth is running [in sync with rinkeby](https://gist.github.com/cryptogoth/10a98e8078cfd69f7ca892ddbdcf26bc). (alternatively you may wanna try a public web3 compatible API, like Infura).
 - `node scripts/list-kitties-auctions.js` - configure geth rpc port here.
