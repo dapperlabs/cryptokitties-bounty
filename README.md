@@ -77,6 +77,8 @@ The value of rewards paid out will vary depending on Severity which is calculate
   - Create a new issue with the title starting as “QUESTION”
 - Will the code change during the bounty?
   - Yes, as issues are reported we will update the code as soon as possible. Please make sure your bugs are reported against the latest versions of the published code.
+- I'm having trouble setting up the contracts? 
+  - Join the [CryptoKitties Gitter to get some assistance](https://gitter.im/Crypto_Kitties/Lobby)
 
 
 <b>Important Legal Information:</b>
