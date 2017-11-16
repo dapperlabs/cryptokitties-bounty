@@ -17,7 +17,7 @@ This newborn will be assigned to the owner of the matron cat at the time of birt
 
 Note: CryptoKitties do not have a permanently assigned gender. While they can only engage in one breeding one session at one time, each cat is able to act as either matron or sire. The owner chooses per breeding interaction!
 
-**See full basic operations [here](https://github.com/axiomzen/cryptokitties-bounty/blob/master/CryptoKitty-Basic-Operations)**  
+**See full basic operations [here](./CryptoKitty%20Basics.md)**  
 
 ### The Scope for this Bounty Program:
 
