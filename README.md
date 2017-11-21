@@ -1,4 +1,7 @@
-# The CryptoKitty Bounty Program
+# The CryptoKitty Bounty Program is NOW CLOSED
+Thank you everyone for your participation!! Please stay tuned for rewards!
+
+CryptoKitty Bounty Program
 CryptoKitties recognizes the importance of security researchers in keeping our community safe and fun. With the launch of CryptoKitties around the corner, we would love the community to help provide disclosure of security vulnerabilities via our bounty program described below.
 
 ### What you Should Know About CryptoKitties:
